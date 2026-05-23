@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/start-game.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <title>Spelling Game</title>
+</head>
+<body>
+    <!-- Container -->
+    <div id="container" class="d-flex justify-content-around">
+
+        
+
+        <div class="container-card">
+            <section  class="header">
+                <!-- button home-->
+                <a href="home.html" id="btn-home" style="text-decoration:none">
+                    <i  class="bi bi-house-door-fill" style="text-decoration:none"></i>  
+                </a>
+                
+                <!-- Title -->
+                <div class="title">
+                    Spelling Game
+                </div>
+            </section>
+
+            <!-- img -->
+            <figure class="figure">
+                <img src="img/chimi.png" class="figure-img img-fluid rounded">
+            </figure>
+
+            <!-- level button -->
+            <div class="btn-game">
+                <!-- level -->
+                <div class="level">
+                    <p>Choose the level :</p>
+                </div>
+                <!-- button easy-->
+                    <button type="button" id="btn-easy" >Easy</button>  
+            <br>
+                <!-- button medium-->
+                <a href="medium.html" >
+                    <button type="button" id="btn-medium" >Medium</button>  
+                </a>
+            <br>
+                <!-- button hard-->
+                <a href="hard.html" >
+                    <button type="button" id="btn-hard" >Hard</button>  
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="js/easy.js"></script>
+<script>
+const btnEasy = document.getElementById("btn-easy");
+
+btnEasy.addEventListener("click", () => {
+    window.location.href = "easy.html";
+});
+</script>
+</html>

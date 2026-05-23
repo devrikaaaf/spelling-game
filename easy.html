@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/easy.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Spelling Game</title>
+</head>
+<body>
+    <!-- Container -->
+    <div id="container" class="d-flex justify-content-around">
+        <div class="container-card">  
+            <div id="header">
+                <div id="btn-game">
+                <!-- button home-->
+                <a href="home.html" id="btn-home" >
+                    <i  class="bi bi-house-door-fill"></i>  
+                </a> 
+                <!-- button rules-->     
+                <a href="rules.html" id="btn-rules">
+                    <i  i class="bi bi-joystick"></i>    
+                </a>    
+            </div>
+            <div id="score-timer">
+                 <!-- Score -->
+                
+                    <p id="scoreNum">Score : 0</p>
+                
+
+                <!-- Timer -->
+                <p id="timer" >
+                    10 : 00
+                </p>
+            </div>
+            </div>
+           
+
+            <!-- question -->
+            <div id="quest">
+                <!-- text -->
+                 <div class="guess">
+                    Guess the word!
+                 </div>
+
+                 <!-- audio & user answer -->
+                <div class="btnQuest">
+                    <!-- button audio-->
+                    <button id="btn-audio"><i class="bi bi-volume-down-fill"></i> Play Audio</button>
+                    
+                    <!-- user input -->
+                    <input type="text" id="userInput" placeholder="Type the word">
+                
+                </div>
+
+                <div class="btn-act">
+                    <!-- button hint-->
+                    <button id="btn-hint">Hint</button>
+                    <!-- button check-->
+                <button id="btn-check" >Check</button>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+  
+
+</body>
+
+ 
+<!-- js script -->
+ <script src="js/easy.js"></script>
+
+</html>

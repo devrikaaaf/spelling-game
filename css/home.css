@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+#container{
+    background-color:#FEFDDF;
+    padding: 50px;
+    height: 100vh;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.container-card{
+    padding:20px;
+    align-items: center;
+    width: 760px; 
+    height: 450px; 
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:#FFDE63;
+    border-radius:20px;
+}
+.figure{
+    width: 250px;
+}
+.btn-game{
+    display: flex;
+    flex-direction:column;
+    padding:20px;
+    align-items: center;
+}
+.title{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 50px;
+    color: black;
+}
+.btn-start, .btn-rules{
+    width: 200px;
+    background-color: #FEFDDF;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #4F200D;
+    transition: all 0.3s ease; 
+}
+.btn-start:hover, .btn-rules:hover{
+    background-color: #4F200D;
+    border: none;
+    color: #FEFDDF;
+    transform: scale(1.1);    
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
