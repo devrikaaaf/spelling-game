@@ -19,15 +19,12 @@
     height: max-content; 
     display:flex;
     flex-wrap: wrap;
-
     background-color:#FFDE63;
     border-radius:20px;
-
 }
 
 /* header */
 #header{
-   
     height: 5rem;
     display:flex;
     flex-direction: row;
@@ -195,9 +192,21 @@
     box-shadow: 0 4px 13px #4F200D; 
 }
 
+/* hint area */
+#hintCard{
+    margin-top:2rem;
+    height:max-content;
+    color:#4F200D;
+    background-color: #FFDE63;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    visibility: hidden;
+}
+
 /* button hint, next & finish */
 .btn-act{
-    margin-top: 10rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
