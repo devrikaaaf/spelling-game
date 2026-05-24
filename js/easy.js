@@ -92,15 +92,10 @@ const allAudio = [
 
     // get element from html
     const btnAudio = document.getElementById("btn-audio");
-
     const btnCheck = document.getElementById("btn-check");
-
     const btnHint = document.getElementById("btn-hint");
-
     const btnFinish = document.getElementById("btn-finish");
-
     const userInput = document.getElementById("userInput");
-
     const scoreNum = document.getElementById("scoreNum");
 
     // play audio
@@ -112,12 +107,16 @@ const allAudio = [
         audio.play();
     });
 
+    // open popup
+    
+
     //current question
     let currentQuest= 0;
     //user score
     let score = 0;
-    // check user answer
 
+
+    // check user answer
     btnCheck.addEventListener("click", ()=>{
         // get the user answer
         const userAnswer = userInput.value.toLowerCase().trim(); //trim for remove space
@@ -126,26 +125,26 @@ const allAudio = [
 
         // score add logic
         if(userAnswer === correctAns){
-            // alert("Correct!");
-        
+            
+            // alert answer is correct
             Swal.fire({
                 title: "Good job!",
                 text: "Your answer is correct!",
                 icon: "success",
                 confirmButtonText: "Continue"
             });
-
-            score += 10;
             
+            score += 10;
+           
         }else{
-          
+            // alert answer is incorrect
             Swal.fire({
                 icon: "error",
                 title: "Oops...",
-                text: "Incorrect! The answer is : "  + correctAns,
+                text: "The correct answer is : "  + correctAns,
                 confirmButtonText: "Continue"
             });
-            
+           
         }
         
         // blank the input text
@@ -184,7 +183,6 @@ const allAudio = [
 
 // timer game
 
-
 // get element from html
 const timerText = document.getElementById("timer");
 
@@ -195,16 +193,17 @@ const timer = setInterval(() => {
 
     timeGame--;
 
-    // minute
+    // minutes
     const minutes = Math.floor(timeGame / 60);
 
-    // second
+    // seconds
     const seconds = timeGame % 60;
 
     // format 2 digits using padStart()
     timerText.textContent =
         `${minutes} : ${seconds.toString().padStart(2, "0")}`;
-
+    
+    // if the timer was 0:00
     if(timeGame <=0){
        
         clearInterval(timer);

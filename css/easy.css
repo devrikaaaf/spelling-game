@@ -10,6 +10,7 @@
     font-weight: 500;
     font-style: normal;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .container-card{
     padding:2vh;
@@ -191,7 +192,7 @@
     font-weight: 700;
     font-size: 1.2rem;
     transform: scale(1.02);    
-    box-shadow: 0 5px 10px #4F200D; 
+    box-shadow: 0 4px 13px #4F200D; 
 }
 
 /* button hint, next & finish */
@@ -231,3 +232,32 @@
     cursor: not-allowed;    
     opacity: 0.7;           
 }
+
+
+/* sweetAlert2 popup */
+.swal2-popup {
+    background-color: #ffffff !important; /* Warna latar belakang */
+    border-radius: 15px !important;       /* Radius border */
+    color: #4F200D !important;  /* Warna teks */
+    box-shadow: 0 4px 22px #707070 !important; 
+    transition: all 0.3s ease !important;
+    padding: 1rem !important;
+}
+
+/* sweetAlert2 button*/
+.swal2-confirm {
+    background-color: #F2B50B !important;
+    font-weight: 700;
+    color: #4F200D !important; 
+    border-radius: 8px !important;
+    margin: 1rem !important;
+}
+
+.swal2-confirm:hover {
+    background-color: #FFDE63 !important;
+    color: #4F200D !important; 
+    border-radius: 8px !important;
+    transform: scale(1.06) !important;    
+    box-shadow: 0 2px 10px #4F200D !important; 
+}
+
