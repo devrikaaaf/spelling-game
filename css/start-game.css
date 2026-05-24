@@ -90,7 +90,7 @@
 
 /* button level */
 #btn-easy{
-    background-color:#247808; 
+    background-color:#0D530E; 
     color:white;
     border: none;
     width: 150px;
@@ -129,8 +129,8 @@
 /* button game:hover */
 #btn-easy:hover{
     background-color:#FEFDDF; 
-    color:#247808;
-    border: #247808;
+    color:#0D530E;
+    border: #0D530E;
     transform: scale(1.1);    
      box-shadow: 0 4px 10px rgba(0,0,0,0.3);  
 }

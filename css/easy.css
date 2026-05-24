@@ -19,7 +19,7 @@
     height: max-content; 
     display:flex;
     flex-wrap: wrap;
-    background-color:#FFDE63;
+    background-color:#0D530E;
     border-radius:20px;
 }
 
@@ -34,7 +34,7 @@
     border-radius: 10px;
     padding: 1rem;
     align-items: center;
-    color: black;
+    color: #FBF5DD;
     justify-content: space-between;
 
 }
@@ -56,7 +56,7 @@
     border-radius: 8px;
     padding: 8px;
     font-size: 2rem;
-    color: #4F200D;
+    color: #0D530E;
     transition: all 0.3s ease; 
     text-decoration: none;
 }
@@ -72,7 +72,7 @@
     padding:8px;
     font-size: 2rem;
     transform: scale(1.1);    
-    box-shadow: 0 3px 10px #4F200D; 
+    box-shadow: 0 3px 10px #0D530E; 
 }
 
 /* score and timer */
@@ -97,7 +97,7 @@
     padding: 1rem;
     font-weight: 700;
     font-size: 1.6rem;
-    color: #4F200D;
+    color: #0D530E;
     display: flex;
     align-items: center;
     justify-content: start; 
@@ -113,7 +113,7 @@
     padding: 1rem;
     font-weight: 700;
     font-size: 1.6rem;
-    color: #4F200D;
+    color: #0D530E;
     display: flex;
     align-items: center;
     justify-content: end; 
@@ -123,7 +123,7 @@
 #quest{
     background-color: #FEFDDF;
     border-radius: 10px;
-    color: black;
+    color: #0D530E;
     display:flex;
     flex-direction:column;
     width:675px;
@@ -138,9 +138,9 @@
     display:flex;
     flex-direction: row;
     font-weight: 700;
-    font-size:2rem;
+    font-size:2.2rem;
     justify-content: center; 
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 /* user input and audio */
@@ -156,10 +156,16 @@
 #userInput{
     width: 50rem;
     padding: 0.5rem;
-    background-color:#FEFDDF; 
-    border: 2px solid #4F200D;
+    background-color:#FBF5DD;
+    border: 2px solid #0D530E;
     border-radius: 8px;
     font-size: 1.2rem;
+    color:#0D530E;
+    font-weight: 500;
+}
+
+#userInput:active{
+    border: 2px solid #0D530E;
 }
 
 /* button play audio */
@@ -170,8 +176,8 @@
     justify-content: center;
     padding: 0.6rem;
     margin-right: 10px;
-    background-color: #F2B50B;
-    color:#4F200D;
+    background-color: #FFDE63;
+    color:#0D530E;
     border: none;
     border-radius: 10px;
     font-size: 1.2rem;
@@ -181,32 +187,30 @@
 }
 #btn-audio i{
     display:flex;
-    font-size: 2rem; 
+    font-size: 1.8rem; 
 }
 #btn-audio:hover{
-    background-color: #FFDE63;
-    color:#4F200D;
-    font-weight: 700;
-    font-size: 1.2rem;
-    transform: scale(1.02);    
-    box-shadow: 0 4px 13px #4F200D; 
+    background-color: #0D530E; 
+    color:#FBF5DD;
+    transform: scale(1.04);    
+    box-shadow: 0 3px 10px #0D530E; 
 }
 
 /* hint area */
 #hintCard{
     margin-top:2rem;
     height:max-content;
-    color:#4F200D;
-    background-color: #FFDE63;
+    color:#0D530E;
+    background-color: #BCD9A2;
     border: none;
     border-radius: 10px;
-    padding: 1rem;
+    padding: 1.2rem;
     visibility: hidden;
 }
 
 /* button hint, next & finish */
 .btn-act{
-    margin-top: 5rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -215,9 +219,9 @@
 }
 #btn-hint, #btn-check{
     width: 10rem;
-    background-color: #F2B50B;
-    color:#4F200D;
-    font-weight: 700;
+    background-color: #FFDE63;
+    color:#0D530E;
+    font-weight: 800;
     padding: 0.5rem;
     border: none;
     border-radius: 8px;
@@ -226,12 +230,10 @@
 }
 
 #btn-hint:hover, #btn-check:hover{
-    background-color: #FFDE63;
-    color:#4F200D;
-    font-weight: 700;
-    font-size: 1.2rem;
-    transform: scale(1.06);    
-    box-shadow: 0 4px 12px #4F200D; 
+    background-color: #0D530E; 
+    color:#FBF5DD;
+    transform: scale(1.04);    
+    box-shadow: 0 3px 12px #BCD9A2; 
 }
 
 /* when button check disabled */
@@ -247,7 +249,7 @@
 .swal2-popup {
     background-color: #ffffff !important; /* Warna latar belakang */
     border-radius: 15px !important;       /* Radius border */
-    color: #4F200D !important;  /* Warna teks */
+    color: #0D530E !important;  /* Warna teks */
     box-shadow: 0 4px 22px #707070 !important; 
     transition: all 0.3s ease !important;
     padding: 1rem !important;
@@ -255,18 +257,16 @@
 
 /* sweetAlert2 button*/
 .swal2-confirm {
-    background-color: #F2B50B !important;
+    background-color: #0D530E  !important;
     font-weight: 700;
-    color: #4F200D !important; 
+    color: #FBF5DD !important; 
     border-radius: 8px !important;
     margin: 1rem !important;
+    transition: all 0.3s ease; 
 }
 
 .swal2-confirm:hover {
-    background-color: #FFDE63 !important;
-    color: #4F200D !important; 
-    border-radius: 8px !important;
     transform: scale(1.06) !important;    
-    box-shadow: 0 2px 10px #4F200D !important; 
+    box-shadow: 0 2px 10px #0D530E !important; 
 }
 
