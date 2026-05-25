@@ -19,7 +19,7 @@
     height: max-content; 
     display:flex;
     flex-wrap: wrap;
-    background-image: url("../img/bgEasy.png");
+    background-image: url("../img/bgMedium.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@
     border-radius: 8px;
     padding: 8px;
     font-size: 2rem;
-    color: #013300;
+    color: #001C46;
     transition: all 0.3s ease; 
     text-decoration: none;
 }
@@ -76,7 +76,7 @@
     padding:8px;
     font-size: 2rem;
     transform: scale(1.1);    
-    box-shadow: 0 3px 10px #013300;
+    box-shadow: 0 3px 10px #001C46;
 }
 
 /* score and timer */
@@ -101,7 +101,7 @@
     padding: 1rem;
     font-weight: 700;
     font-size: 1.6rem;
-    color: #013300;
+    color: #001C46;
     display: flex;
     align-items: center;
     justify-content: start; 
@@ -117,7 +117,7 @@
     padding: 1rem;
     font-weight: 700;
     font-size: 1.6rem;
-    color: #013300;
+    color: #001C46;
     display: flex;
     align-items: center;
     justify-content: end; 
@@ -129,7 +129,7 @@
 #quest{
     background-color: #FEFDDF;
     border-radius: 10px;
-    color: #013300;
+    color: #001C46;
     display:flex;
     flex-direction:column;
     width:675px;
@@ -142,7 +142,7 @@
     flex-basis:100%;
 }
 .guess{
-     display:flex;
+    display:flex;
     flex-direction: row;
     font-weight: 700;
     font-size:2.5rem;
@@ -155,7 +155,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* flex-basis:100%; */
+    flex-basis:100%;
     justify-content: space-between; 
 }
 /* img */
@@ -192,7 +192,7 @@
     justify-content: center;
     padding: 0.6rem;
     background-color: #FFDE63;
-    color:#013300;
+    color:#001C46;
     border: none;
     border-radius: 8px;
     font-size: 1.2rem;
@@ -205,10 +205,10 @@
     font-size: 1.8rem; 
 }
 #btn-audio:hover{
-    background-color: #013300;
+    background-color: #001C46;
     color:#FBF5DD;
     transform: scale(1.04);    
-    box-shadow: 0 3px 10px #013300;
+    box-shadow: 0 3px 10px #001C46;
 }
 
 /* button hint */
@@ -219,7 +219,7 @@
     justify-content: center;
     padding: 0.6rem;
     background-color: #FFDE63;
-    color:#013300;
+    color:#001C46;
     border: none;
     border-radius: 8px;
     font-size: 1.2rem;
@@ -228,31 +228,31 @@
     transition: all 0.4s ease; 
 }
 #btn-hint:hover{
-    background-color: #013300;
+    background-color: #001C46;
     color:#FBF5DD;
     transform: scale(1.04);    
-    box-shadow: 0 3px 12px #BCD9A2; 
+    box-shadow: 0 3px 12px #001C46;
 }
 
 #userInput{
     width: 420px;
     padding: 0.5rem;
     background-color:#FBF5DD;
-    border: 2px solid #013300;
+    border: 2px solid #001C46;
     border-radius: 8px;
     font-size: 1.2rem;
-    color:#013300;
+    color:#001C46;
     font-weight: 500;
 }
 
 #userInput:active{
-    border: 2px solid #013300;
+    border: 2px solid #001C46;
 }
 
 #btn-check{
     /* width: 0; */
     margin-top: 1rem;
-    background-color: #013300;
+    background-color: #001C46;
     color:#FBF5DD;
     font-weight: 800;
     padding: 0.5rem;
@@ -264,9 +264,9 @@
 
 #btn-check:hover{
     background-color: #FFB300;
-    color:#013300;
+    color:#001C46;
     transform: scale(1.04);    
-    box-shadow: 0 3px 12px #BCD9A2; 
+    box-shadow: 0 3px 12px #918F92;
 }
 /* when button check disabled */
 #btn-check:disabled{
@@ -279,8 +279,8 @@
 /* hint area */
 #hintCard{
     margin-top:1.2rem;
-    color:#013300;
-    background-color: #BCD9A2;
+    color:#001C46;
+    background-color: #c8c8c8;
     border: none;
     border-radius: 10px;
     padding: 1rem;
@@ -289,11 +289,13 @@
 
 
 
+
+
 /* sweetAlert2 popup */
 .swal2-popup {
     background-color: #ffffff !important; 
     border-radius: 15px !important;      
-    color: #013300 !important;  
+    color: #001C46 !important;  
     box-shadow: 0 4px 22px #707070 !important; 
     transition: all 0.3s ease !important;
     padding: 1rem !important;
@@ -301,7 +303,7 @@
 
 /* sweetAlert2 button*/
 .swal2-confirm {
-    background-color: #013300  !important;
+    background-color: #001C46  !important;
     font-weight: 700;
     color: #FBF5DD !important; 
     border-radius: 8px !important;
@@ -311,7 +313,7 @@
 
 .swal2-confirm:hover {
     background-color: #FFDE63  !important;
-    color: #013300  !important;
+    color: #001C46 !important;
     transform: scale(1.06) !important;    
     box-shadow: 0 2px 10px #FFDE63 !important; 
 }
