@@ -201,19 +201,20 @@ const allAudio = [
             
             // give alert
             Swal.fire({
-            title: "Game Finished!",
-            text:"You will be directed to another page...",
-            icon: "success",
-            confirmButtonText: "OK",
-            timer: 5000,
-            timerProgressBar: true,
-            showConfirmButton: false
+                title: "Game Finished!",
+                text:"You will be directed to another page...",
+                icon: "success",
+                confirmButtonText: "OK",
+                timer: 5000,
+                timerProgressBar: true,
+                showConfirmButton: false
             }).then(()=>{
                 // directing to another page
             window.location.href="result.html";
             }); 
         }
- 
+        // Save score in sessionStorage
+        sessionStorage.setItem("gameScore", score);
     });
     
 

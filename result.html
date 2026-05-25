@@ -11,6 +11,8 @@
 
     <title>Spelling Game</title>
 </head>
+
+
 <body>
     <!-- Container -->
     <div id="container" class="d-flex justify-content-around">
@@ -31,7 +33,7 @@
                 <!-- text -->
                 <div class="scoreResult">
                     <p>Your score : </p> 
-                    <p id="scoreNumber"> 0</p>
+                    <p id="scoreNumber">0</p>
                 </div>
             
                 <div class="btnQuest">
@@ -53,6 +55,15 @@
 
  
 <!-- js script -->
- <!-- <script src="js/hard.js"></script> -->
+ <script >
+    //get score from storage
+    const score = sessionStorage.getItem("gameScore");
+    //get the element score id
+    const scoreNumber = document.getElementById("scoreNumber");
+
+    //put score into the html element
+    scoreNumber.textContent = score;
+ </script>
+
 
 </html>
