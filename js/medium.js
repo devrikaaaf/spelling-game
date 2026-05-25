@@ -164,8 +164,8 @@ const allAudio = [
                 icon: "success",
                 confirmButtonText: "Continue"
             });
-            // score will be added +15 points
-            score += 15;
+            // score will be added +20 points
+            score += 20;
            
         }else{
             // alert answer is incorrect

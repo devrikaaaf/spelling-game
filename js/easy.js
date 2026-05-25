@@ -165,7 +165,7 @@ const allAudio = [
                 confirmButtonText: "Continue"
             });
             
-            score += 10;
+            score += 20;
            
         }else{
             // alert answer is incorrect

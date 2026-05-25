@@ -12,35 +12,39 @@
 <body>
     <!-- Container -->
     <div id="container" class="d-flex justify-content-around">
+
         <div class="container-card">
-
-            <!-- img -->
-            <figure class="figure">
-                <img src="img/chimi.png" class="figure-img img-fluid rounded">
-            </figure>
-            
-            
-
-            <!-- title & button -->
-            <div class="btn-game">
+            <div class="header">
                 <!-- Title -->
                 <div class="title">
-                    <p>Spelling</p>
-                    <p>Game</p>
+                Spelling Game
                 </div>
-          
-                <!-- button -->
-                <a href="start-game.html">
-                <button type="button" class="btn-start">Start Game</button>  
-                </a>
-            <br>
-                <a href="rules.html">
-                <button type="button" class="btn-rules">How To Play</button>  
-                </a> 
+            </div>
+            
+            <div id="quest">
+                <!-- img -->
+                <figure class="figure">
+                    <img src="img/books.png" class="figure-img img-fluid rounded">
+                </figure>
+
+                <!-- level button -->
+                <div class="btn-start">
+                    <!-- button play-->
+                    <a href="start-game.html" >
+                        <button type="button" id="btn-play" >Play</button>  
+                    </a>
+                <br>
+                    <!-- button rules-->
+                    <a href="rules.html" >
+                        <button type="button" id="btn-rules" >How to play</button>  
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
 
 </body>
+<script src="js/easy.js"></script>
+
 </html>

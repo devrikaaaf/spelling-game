@@ -2,157 +2,106 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 #container{
-    background-color:#FEFDDF;
+    background-image: url("../img/bgHome.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 5rem;
     height: 100vh;
     align-items: center;
     font-family: "Inter", sans-serif;
     font-weight: 500;
     font-style: normal;
-   
-}
-.container-card{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding:2vh;
-    align-items: center;
-    width: 500px; 
-    height: max-content; 
-    display:flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: rgb(252, 249, 164);
-    border-radius:20px;
-}
-
-/* button home */
-.header{
-    height: 5rem;
-    margin-bottom: 2rem;
-    display:flex;
-    flex-direction: row;
-    flex-basis:100%; 
-    background-color: #FFDE63;
-    border: none;
-    border-radius: 10px;
-    padding: 1rem;
-    color: black;
-    justify-content: space-between;
     
 }
-
-.header #btn-home{
-    width:3rem;
-    height: 3.2rem;
-    background-color: #FEFDDF;
-    font-size: 1.8rem;
-    color: black;
-    text-decoration: none;
-    border: none;
-    border-radius: 8px;
-    padding: 5px;
-    padding-left:5px;
-    align-content: center;
-    transition: all 0.3s ease; 
-}
-
-.header #btn-home:hover{
-    background-color: #FEFDDF;
-    transform: scale(1.1); 
-    box-shadow: 0 2px 10px rgb(117, 117, 117);   
+.container-card{
+    padding:2vh;
+    align-items: center;
+    width: 360px; 
+    height: 500px; 
+    display:flex;
+    flex-wrap: wrap;
+    background-image: url("../img/bgResult.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:20px;
+    justify-content: center;
+    box-shadow: 0 3px 18px #595959;
 }
 
 
-/* Game title */
-.header .title{
-    margin-bottom: 2.5rem;
+/* question */
+#quest{
+    background-color: #FEFFC4F2;
+    border-radius: 10px;
+    color: black; 
+    display:flex;
+    flex-direction:column;
+    width:475px;
+    height: 475px; 
+    font-family: "Inter", sans-serif;
+    padding:2rem;
+    align-items: center;
+    justify-content: center;
+    flex-basis:100%;
+}
+.congrats{
+    display:flex;
+    flex-direction: row;
+    font-weight: 700;
+    font-size:2.5rem;
+    margin-bottom:3rem;
+}
+
+/* img, question, and hint */
+#img-quest{
+    height:max-content;
     display: flex;
     flex-direction: row;
-    align-content: end;
-    font-family: "Inter", sans-serif;
-    font-style: italic;
-    font-weight: 600;
-    font-size: 1.7rem;
-    color: black;
+    flex-wrap: wrap;
+    flex-basis:100%;
+    justify-content: space-between; 
 }
-
-/* img chimi */
+/* img */
 .figure{
     width: 15rem;
+    margin-bottom: 1rem;
 }
 
-/* game level */
-.btn-game{
-    display: flex;
-    flex-direction:column;
-    padding:1.6rem;
+/* group element for audio, hint button, and user input */
+.scoreResult{
+    display:flex;
+    flex-direction: column;
     align-items: center;
-}
-.level{
-    margin-bottom: 2rem;
-    font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size: 2rem;
-    color: black;
+    font-size:1.8rem;
+}
+#scoreNumber{
+    font-weight: 700;
+    font-size: 3rem;
 }
 
-/* button level */
-#btn-easy{
-    background-color:#0D530E; 
-    color:white;
+#btn-home{
+    width:16rem;
+    margin-top: 1rem;
+    background-color: #680000; 
+    color:#FBF5DD;
+    font-weight: 800;
+    padding: 0.6rem;
     border: none;
-    width: 150px;
-    border: none;
-    border-radius: 10px;
-    padding: 0.5rem;
+    border-radius: 8px;
     font-size: 1.3rem;
-    font-weight: 700;
-    transition: all 0.3s ease; 
-}
-#btn-medium{
-    background-color: #1474bd; 
-    color:white;
-    border: none;
-    width: 150px;
-    border: none;
-    border-radius: 10px;
-    padding: 0.5rem;
-    font-size: 1.3rem;
-    font-weight: 700;
-    transition: all 0.3s ease; 
-}
-#btn-hard{
-    background-color: #7a1313; 
-    color:white;
-    border: none;
-    width: 150px;
-    border: none;
-    border-radius: 10px;
-    padding: 0.5rem;
-    font-size: 1.3rem;
-    font-weight: 700;
     transition: all 0.3s ease; 
 }
 
-/* button game:hover */
-#btn-easy:hover{
-    background-color:#FEFDDF; 
-    color:#0D530E;
-    border: #0D530E;
-    transform: scale(1.1);    
-     box-shadow: 0 4px 10px rgba(0,0,0,0.3);  
+#btn-home:hover{
+    background-color: #FFB300;
+    color:black; 
+    transform: scale(1.04);    
+    box-shadow: 0 3px 12px #918F92;
 }
-#btn-medium:hover{
-    background-color:#FEFDDF; 
-    color:#1474bd;
-    border: #1474bd;
-    transform: scale(1.1);    
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);  
-}
-#btn-hard:hover{
-    background-color:#FEFDDF; 
-    color:#7a1313; 
-    border: #7a1313; 
-    transform: scale(1.1);    
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);  
-}
+
+
