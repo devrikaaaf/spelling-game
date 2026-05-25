@@ -69,13 +69,9 @@
     justify-content: center; 
 }
 #btn-home:hover, #btn-rules:hover{
-    width:3rem;
-    height: 3rem;
-    background-color: #FEFDDF;
-    border: none;
-    padding:8px;
-    font-size: 2rem;
-    transform: scale(1.1);    
+    background-color: #001C46;
+    color: #FEFDDF;
+    transform: scale(1.04);    
     box-shadow: 0 3px 10px #001C46;
 }
 
@@ -145,13 +141,14 @@
     display:flex;
     flex-direction: row;
     font-weight: 700;
-    font-size:2.5rem;
+    font-size:2.2rem;
     margin-left: 26rem; 
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 /* img, question, and hint */
 #img-quest{
+    height:max-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -236,10 +233,11 @@
 
 #userInput{
     width: 420px;
-    padding: 0.5rem;
+    padding: 0.3rem;
+    text-align: center;
     background-color:#FBF5DD;
     border: 2px solid #001C46;
-    border-radius: 8px;
+    border-radius: 6px;
     font-size: 1.2rem;
     color:#001C46;
     font-weight: 500;

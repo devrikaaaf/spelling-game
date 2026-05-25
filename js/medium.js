@@ -254,12 +254,12 @@ function gameOver(){
     btnCheck.disabled = true;
 
     Swal.fire({
-    title: "Time is Over!",
-    text:"Don't worry, you doing a great job...",
-    icon: "warning",
-    timer: 10000,
-    timerProgressBar: true,
-    showConfirmButton: false
+        title: "Time is Over!",
+        text:"Don't worry, you doing a great job...",
+        icon: "warning",
+        timer: 10000,
+        timerProgressBar: true,
+        showConfirmButton: false
     }).then(() => {
         
     // directing to result page
