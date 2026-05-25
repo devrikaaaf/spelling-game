@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/rules.css">
+    <link rel="stylesheet" href="css/result.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
@@ -11,12 +11,33 @@
 </head>
 <body>
     <!-- Container -->
-    <div id="container" class="d-flex justify-content-around" style="background-color:rgb(219, 129, 255)">
-        
-        <p>this is result of the game</p>
+    <div id="container" class="d-flex justify-content-around">
 
+        <div class="container-card">
+            <section  class="header">
+                <!-- button home-->
+                <a href="home.html" id="btn-home">
+                    <i  class="bi bi-house-door-fill" style="padding-left:2px;"></i>  
+                </a>
+                
+                <!-- Title -->
+                <div class="title">
+                    Spelling Game
+                </div>
+            </section>
+
+            <!-- img -->
+            <figure class="figure">
+                <img src="img/hard.png" class="figure-img img-fluid rounded">
+            </figure>
+
+            
+        </div>
     </div>
 
 
 </body>
+<script src="js/easy.js"></script>
+
+</script>
 </html>

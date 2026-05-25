@@ -19,8 +19,12 @@
     height: max-content; 
     display:flex;
     flex-wrap: wrap;
-    background-color:#0D530E;
+    background-image: url("../img/bgEasy.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius:20px;
+    justify-content: center;
 }
 
 /* header */
@@ -119,6 +123,8 @@
     justify-content: end; 
 }
 
+
+
 /* question */
 #quest{
     background-color: #FEFDDF;
@@ -129,10 +135,11 @@
     width:675px;
     height:max-content;
     font-family: "Inter", sans-serif;
-    padding:1.5rem;
+    padding:2rem;
     margin-top:1rem;
     align-content: center;
     justify-content: center;
+    flex-basis:100%;
 }
 .guess{
     display:flex;
@@ -140,46 +147,54 @@
     font-weight: 700;
     font-size:2.2rem;
     justify-content: center; 
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-/* user input and audio */
+/* img, question, and hint */
+#img-quest{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-basis:100%; */
+    justify-content: space-between; 
+}
+/* img */
+.figure{
+    width: 13rem;
+    
+}
+
+/* group element for audio, hint button, and user input */
 .btnQuest{
     display:flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     margin-top:1rem;
     font-family: "Inter", sans-serif;
     font-weight: 500;
     
 }
-#userInput{
-    width: 50rem;
-    padding: 0.5rem;
-    background-color:#FBF5DD;
-    border: 2px solid #0D530E;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    color:#0D530E;
-    font-weight: 500;
-}
 
-#userInput:active{
-    border: 2px solid #0D530E;
+/* audio and hint button */
+#audio-hint{
+    height: max-content;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;  
+    margin-bottom:1.5rem;  
 }
 
 /* button play audio */
 #btn-audio{
-    width: 12rem;
+    width: 10rem;
     height:max-content;
     display:flex;
     justify-content: center;
     padding: 0.6rem;
-    margin-right: 10px;
     background-color: #FFDE63;
     color:#0D530E;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     font-size: 1.2rem;
     font-weight: 700;
     font-style: italic;
@@ -196,29 +211,47 @@
     box-shadow: 0 3px 10px #0D530E; 
 }
 
-/* hint area */
-#hintCard{
-    margin-top:2rem;
+/* button hint */
+#btn-hint{
+    width: 10rem;
     height:max-content;
+    display:flex;
+    justify-content: center;
+    padding: 0.6rem;
+    background-color: #FFDE63;
     color:#0D530E;
-    background-color: #BCD9A2;
     border: none;
-    border-radius: 10px;
-    padding: 1.2rem;
-    visibility: hidden;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-style: italic;
+    transition: all 0.4s ease; 
+}
+#btn-hint:hover{
+    background-color: #0D530E; 
+    color:#FBF5DD;
+    transform: scale(1.04);    
+    box-shadow: 0 3px 12px #BCD9A2; 
 }
 
-/* button hint, next & finish */
-.btn-act{
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    
+#userInput{
+    width: 420px;
+    padding: 0.5rem;
+    background-color:#FBF5DD;
+    border: 2px solid #0D530E;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color:#0D530E;
+    font-weight: 500;
 }
-#btn-hint, #btn-check{
-    width: 10rem;
+
+#userInput:active{
+    border: 2px solid #0D530E;
+}
+
+#btn-check{
+    /* width: 0; */
+    margin-top: 1rem;
     background-color: #FFDE63;
     color:#0D530E;
     font-weight: 800;
@@ -229,13 +262,12 @@
     transition: all 0.3s ease; 
 }
 
-#btn-hint:hover, #btn-check:hover{
+#btn-check:hover{
     background-color: #0D530E; 
     color:#FBF5DD;
     transform: scale(1.04);    
     box-shadow: 0 3px 12px #BCD9A2; 
 }
-
 /* when button check disabled */
 #btn-check:disabled{
     background-color: #ccc; 
@@ -243,6 +275,20 @@
     cursor: not-allowed;    
     opacity: 0.7;           
 }
+
+/* hint area */
+#hintCard{
+    margin-top:1.2rem;
+    color:#0D530E;
+    background-color: #BCD9A2;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    visibility: hidden;
+}
+
+
+
 
 
 /* sweetAlert2 popup */
