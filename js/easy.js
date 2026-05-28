@@ -213,13 +213,25 @@ const allAudio = [
             }); 
             
         }
+
+        if(score >= 120){
+            sessionStorage.setItem("resultText","Outstanding!");
+        }else if(score >= 80){
+            sessionStorage.setItem("resultText","Well Done!");
+        }else if(score >= 40){
+            sessionStorage.setItem("resultText","Keep Practicing!");
+        }else{
+            sessionStorage.setItem("resultText","Better Luck Next Time!");
+        }
+        
         // Save score in sessionStorage
         sessionStorage.setItem("gameScore", score);
+        // Save level in sessionStorage
+        sessionStorage.setItem("currentLevel", "easy.html");
     });
     
 
-// timer game
-
+// GAME TIMER
 // get element from html
 const timerText = document.getElementById("timer");
 
@@ -266,8 +278,30 @@ function gameOver(){
     // Save score in sessionStorage
     sessionStorage.setItem("gameScore", score);
 
+    // Save level in sessionStorage
+    sessionStorage.setItem("currentLevel", "easy.html");
+
     // directing to another page
     window.location.href="result.html";
 
     });
 }  
+
+// home button confirm alert
+const btnHome = document.getElementById("btn-home");
+    btnHome.addEventListener("click", ()=>{
+        // alert answer is correct
+        Swal.fire({
+            title: "Are you sure?",
+            text: "Your progress will be reset",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonText: "Yes"
+        }).then((result) => {
+        if (result.isConfirmed){
+            // directing to home
+            window.location.href="home.html";
+        }
+    });
+});
+

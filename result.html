@@ -21,9 +21,7 @@
             <!-- question -->
             <div id="quest">
                 <!-- text -->
-                <div class="congrats">
-                    Congratulations!
-                </div>
+                <div id="congrats"></div>
 
                 <!-- img -->
                 <div class="figure">
@@ -37,10 +35,14 @@
                 </div>
             
                 <div class="btnQuest">
+                    <!-- button play again-->
+                
+                        <button id="btn-playAgain">Play again</button>
+                   
                     <!-- button Home-->
                      <a href="home.html">
                         <button id="btn-home" >Home</button>
-                    </a>
+                     </a>
                 </div>
 
             </div>
@@ -58,11 +60,32 @@
  <script >
     //get score from storage
     const score = sessionStorage.getItem("gameScore");
-    //get the element score id
+    //get the element scoreNumber
     const scoreNumber = document.getElementById("scoreNumber");
-
     //put score into the html element
     scoreNumber.textContent = score;
+
+
+    //get result text from storage
+    const resultText = sessionStorage.getItem("resultText");
+    //get the element congrats 
+    const congrats = document.getElementById("congrats");
+    //put score into the html element
+    scoreNumber.textContent = score;
+    //put result text into the html element
+    congrats.textContent = resultText;
+
+    
+    //get the element button play again 
+    const playAgain = document.getElementById("btn-playAgain");
+    playAgain.addEventListener("click",()=>{
+        //get current level from storage
+        const currentLevel = sessionStorage.getItem("currentLevel");
+
+        //start a new game in the same level
+        window.location.href = currentLevel;
+    })
+
  </script>
 
 

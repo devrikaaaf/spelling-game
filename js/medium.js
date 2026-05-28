@@ -215,6 +215,9 @@ const allAudio = [
         }
         // Save score in sessionStorage
         sessionStorage.setItem("gameScore", score);
+
+        // Save level in sessionStorage
+        sessionStorage.setItem("currentLevel", "medium.html");
     });
     
 
@@ -263,8 +266,30 @@ function gameOver(){
         showConfirmButton: false
     }).then(() => {
         
+    // Save level in sessionStorage
+    sessionStorage.setItem("currentLevel", "medium.html");
+
     // directing to result page
     window.location.href = "result.html";
 
+
     });
 }  
+
+// home button confirm alert
+const btnHome = document.getElementById("btn-home");
+    btnHome.addEventListener("click", ()=>{
+        // alert answer is correct
+        Swal.fire({
+            title: "Are you sure?",
+            text: "Your progress will be reset",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonText: "Yes"
+        }).then((result) => {
+        if (result.isConfirmed){
+            // directing to home
+            window.location.href="home.html";
+        }
+    });
+});
