@@ -2,104 +2,104 @@
 
 const allAudio = [
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/apple--_gb_1.mp3",
-        answer:"apple",
-        hint:"A round fruit that is sweet and crunchy."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/accommodate--_gb_1.mp3",
+        answer:"accommodate",
+        hint:"To provide space or help for someone’s needs."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/banana--_gb_1.mp3",
-        answer:"banana",
-        hint:"A long yellow fruit that monkeys like."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/achievement--_gb_1.mp3",
+        answer:"achievement",
+        hint:"Something important gained through hard work or effort."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/school--_gb_1.mp3",
-        answer:"school",
-        hint:"A place where children learn new things."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/acknowledgment--_gb_1.mp3",
+        answer:"acknowledgment",
+        hint:"Showing that you recognize or accept something."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/window--_gb_1.mp3",
-        answer:"window",
-        hint:"You look through it to see outside."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/bureaucracy--_gb_1.mp3",
+        answer:"bureaucracy",
+        hint:"A system with many official rules and procedures."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/pencil--_gb_1.mp3",
-        answer:"pencil",
-        hint:"You use it to write or draw."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/consciousness--_gb_1.mp3",
+        answer:"consciousness",
+        hint:"The state of being awake and aware of surroundings."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/garden--_gb_1.mp3",
-        answer:"garden",
-        hint:"A place where flowers and plants grow."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/determination--_gb_1.mp3",
+        answer:"determination",
+        hint:"A strong decision to keep trying and not give up."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/rainbow--_gb_1.mp3",
-        answer:"rainbow",
-        hint:"Colorful lines in the sky after rain."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/embarrassment--_gb_1.mp3",
+        answer:"embarrassment",
+        hint:"A feeling of shame or awkwardness."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/animal--_gb_1.mp3",
-        answer:"animal",
-        hint:"A living thing like a cat, dog, or bir"
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/entrepreneur--_gb_1.mp3",
+        answer:"entrepreneur",
+        hint:"A person who starts and manages a business."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/teacher--_gb_1.mp3",
-        answer:"teacher",
-        hint:"A person who helps students learn."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/exaggeration--_gb_1.mp3",
+        answer:"exaggeration",
+        hint:"Making something seem bigger or more important than it really is."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/bicycle--_gb_1.mp3",
-        answer:"bicycle",
-        hint:"A two-wheel ride you pedal with your feet."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/fascinating--_gb_1.mp3",
+        answer:"fascinating",
+        hint:"Extremely interesting and able to hold attention."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/library--_gb_1.mp3",
-        answer:"library",
-        hint:"A quiet place with many books to read."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/governmental--_gb_1.mp3",
+        answer:"governmental",
+        hint:"Related to a government or public authority."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/morning--_gb_1.mp3",
-        answer:"morning",
-        hint:"The early part of the day after waking up."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/hypothesis--_gb_1.mp3",
+        answer:"hypothesis",
+        hint:"An idea or explanation that can be tested."
     },
      {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/picture--_gb_1.mp3",
-        answer:"picture",
-        hint:"A drawing or photo you can look at."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/independent--_gb_1.mp3",
+        answer:"independent",
+        hint:"Able to do things without help from others."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/blanket--_gb_1.mp3",
-        answer:"blanket",
-        hint:"A soft cover to keep you warm."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/maintenance--_gb_1.mp3",
+        answer:"maintenance",
+        hint:"The work needed to keep something in good condition."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/elephant--_gb_1.mp3",
-        answer:"elephant",
-        hint:"A very big gray animal with a long trunk."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/miscellaneous--_gb_1.mp3",
+        answer:"miscellaneous",
+        hint:"Made up of different kinds of things or items."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/holiday--_gb_1.mp3",
-        answer:"holiday",
-        hint:"A special day for relaxing or having fun."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/opportunity--_gb_1.mp3",
+        answer:"opportunity",
+        hint:"A good chance to do or achieve something."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/sandwich--_gb_1.mp3",
-        answer:"sandwich",
-        hint:"Food made with bread and fillings inside."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/perseverance--_gb_1.mp3",
+        answer:"perseverance",
+        hint:"Continuing to work hard even when things are difficult."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/sunshine--_gb_1.mp3",
-        answer:"sunshine",
-        hint:"Bright light and warmth from the sun."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/responsibility--_gb_1.mp3",
+        answer:"responsibility",
+        hint:"A duty or task that someone is expected to handle."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/chocolate--_gb_1.mp3",
-        answer:"chocolate",
-        hint:"A sweet treat loved by many people."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/sophisticated--_gb_1.mp3",
+        answer:"sophisticated",
+        hint:"Advanced, complex, or highly developed."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/computer--_gb_1.mp3",
-        answer:"computer",
-        hint:"A machine used for learning, games, and work."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/unpredictable--_gb_1.mp3",
+        answer:"unpredictable",
+        hint:"Impossible to know or guess before it happens."
     }
     ];
 
