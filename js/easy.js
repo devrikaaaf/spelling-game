@@ -317,7 +317,7 @@ const btnHome = document.getElementById("btn-home");
         }).then((result) => {
         if (result.isConfirmed){
             // directing to home
-            window.location.href="home.html";
+            window.location.href="index.html";
         }
     });
 });
