@@ -39,7 +39,7 @@ const allAudio = [
     {
         audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/animal--_gb_1.mp3",
         answer:"animal",
-        hint:"A living thing like a cat, dog, or bir"
+        hint:"A living thing like a cat, dog, or bird."
     },
     {
         audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/teacher--_gb_1.mp3",

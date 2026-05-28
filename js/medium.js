@@ -2,104 +2,104 @@
 
 const allAudio = [
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/apple--_gb_1.mp3",
-        answer:"apple",
-        hint:"A round fruit that is sweet and crunchy."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/adventure--_gb_1.mp3",
+        answer:"adventure",
+        hint:"An exciting experience with new or unusual activities."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/banana--_gb_1.mp3",
-        answer:"banana",
-        hint:"A long yellow fruit that monkeys like."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/beautiful--_gb_1.mp3",
+        answer:"beautiful",
+        hint:"Something that looks very nice or attractive."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/school--_gb_1.mp3",
-        answer:"school",
-        hint:"A place where children learn new things."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/calendar--_gb_1.mp3",
+        answer:"calendar",
+        hint:"A chart or book that shows days, weeks, and months."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/window--_gb_1.mp3",
-        answer:"window",
-        hint:"You look through it to see outside."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/dangerous--_gb_1.mp3",
+        answer:"dangerous",
+        hint:"Something that can hurt people or cause problems."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/pencil--_gb_1.mp3",
-        answer:"pencil",
-        hint:"You use it to write or draw."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/energy--_gb_1.mp3",
+        answer:"energy",
+        hint:"The power needed to move, work, or stay active."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/garden--_gb_1.mp3",
-        answer:"garden",
-        hint:"A place where flowers and plants grow."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/favorite--_gb_1.mp3",
+        answer:"favorite",
+        hint:"The thing you like more than others."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/rainbow--_gb_1.mp3",
-        answer:"rainbow",
-        hint:"Colorful lines in the sky after rain."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/geography--_gb_1.mp3",
+        answer:"geography",
+        hint:"The study of places, maps, and the Earth."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/animal--_gb_1.mp3",
-        answer:"animal",
-        hint:"A living thing like a cat, dog, or bir"
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/history--_gb_1.mp3",
+        answer:"history",
+        hint:"The study of events that happened in the past."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/teacher--_gb_1.mp3",
-        answer:"teacher",
-        hint:"A person who helps students learn."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/imagine--_gb_1.mp3",
+        answer:"imagine",
+        hint:"To create pictures or ideas in your mind."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/bicycle--_gb_1.mp3",
-        answer:"bicycle",
-        hint:"A two-wheel ride you pedal with your feet."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/journey--_gb_1.mp3",
+        answer:"journey",
+        hint:"A trip from one place to another."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/library--_gb_1.mp3",
-        answer:"library",
-        hint:"A quiet place with many books to read."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/knowledge--_gb_1.mp3",
+        answer:"knowledge",
+        hint:"Information and understanding learned from study or experience."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/morning--_gb_1.mp3",
-        answer:"morning",
-        hint:"The early part of the day after waking up."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/language--_gb_1.mp3",
+        answer:"language",
+        hint:"A way people speak, write, and communicate."
     },
      {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/picture--_gb_1.mp3",
-        answer:"picture",
-        hint:"A drawing or photo you can look at."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/medicine--_gb_1.mp3",
+        answer:"medicine",
+        hint:"Something used to help people feel better when sick."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/blanket--_gb_1.mp3",
-        answer:"blanket",
-        hint:"A soft cover to keep you warm."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/necessary--_gb_1.mp3",
+        answer:"necessary",
+        hint:"Something important or needed."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/elephant--_gb_1.mp3",
-        answer:"elephant",
-        hint:"A very big gray animal with a long trunk."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/opinion--_gb_1.mp3",
+        answer:"opinion",
+        hint:"What a person thinks or believes about something."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/holiday--_gb_1.mp3",
-        answer:"holiday",
-        hint:"A special day for relaxing or having fun."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/popular--_gb_1.mp3",
+        answer:"popular",
+        hint:"Liked by many people."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/sandwich--_gb_1.mp3",
-        answer:"sandwich",
-        hint:"Food made with bread and fillings inside."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/question--_gb_1.mp3",
+        answer:"question",
+        hint:"Something you ask to get an answer."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/sunshine--_gb_1.mp3",
-        answer:"sunshine",
-        hint:"Bright light and warmth from the sun."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/restaurant--_gb_1.mp3",
+        answer:"restaurant",
+        hint:"A place where people buy and eat food."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/chocolate--_gb_1.mp3",
-        answer:"chocolate",
-        hint:"A sweet treat loved by many people."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/surprise--_gb_1.mp3",
+        answer:"surprise",
+        hint:"Something unexpected that makes people feel amazed.."
     },
     {
-        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/computer--_gb_1.mp3",
-        answer:"computer",
-        hint:"A machine used for learning, games, and work."
+        audio:"https://ssl.gstatic.com/dictionary/static/sounds/oxford/vacation--_gb_1.mp3",
+        answer:"vacation",
+        hint:"A time to relax or travel away from school or work."
     }
     ];
 
