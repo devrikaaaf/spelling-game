@@ -1,22 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/rules.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-    <title>Spelling Game</title>
-</head>
-<body>
-    <!-- Container -->
-    <div id="container" class="d-flex justify-content-around" style="background-color:rgb(252, 175, 175)">
-        
-        <p>this is rule of the game</p>
+<title>Spelling Game - How to Play</title>
 
+</head>
+
+<body>
+<div id="container">
+  <div class="rules-container">
+    <div id="header">
+        <div class="title">How To Play</div>
+        <p class="subtitle">Welcome to the Spelling Bee Game!</p>
     </div>
 
+    <div class="rules-list">
 
+      <div class="rule-item">
+        <strong>1.</strong> This game has 3 difficulty levels:
+        <strong>Easy</strong>, <strong>Medium</strong>, and <strong>Hard</strong>. Each level contains <strong>10 questions.</strong>
+      </div>
+
+      <div class="rule-item">
+        <strong>2.</strong> After you choose a level, the game will start automatically and the timer will begin running. Each game session has a time limit of <strong>10 minutes</strong>.
+      </div>
+
+      <div class="rule-item">
+        <strong>4.</strong> During the game, you will see these buttons:
+
+        <ul class="button-list">
+          <li><strong>Play Audio</strong> : Plays the word that you need to guess.</li>
+          <li><strong>Hint</strong> : Gives an additional clue for the word.</li>
+          <li><strong>Check</strong> : Submits your answer and shows whether your answer is correct or incorrect.</li>
+        </ul>
+      </div>
+
+
+      <div class="rule-item">
+        <strong>5.</strong> Scoring Rules:
+        <ul class="score-box">
+          <li><strong>Easy</strong> → Correct Answer = +20 points | Incorrect Answer = 0 points</li>
+          <li><strong>Medium</strong> → Correct Answer = +20 points | Incorrect Answer = -5 points</li>
+          <li><strong>Hard</strong> → Correct Answer = +20 points | Incorrect Answer = -10 points</li>
+        </ul>
+      </div>
+
+      <div class="rule-item">
+        <strong>6.</strong> Make sure to spell each word correctly before submitting your answer. When the timer runs out, the game will end and you cannot continue playing. 
+      </div>
+
+      <div class="rule-item">
+        <strong>7.</strong> You can listen to the audio as many times as needed. Try to get the highest score before the time runs out.
+      </div>
+
+     
+      <!-- button -->
+    <div class="btn-start">
+       <!-- button home-->
+        <a href="home.html" >
+            <button type="button" id="btn-home" > Home</button>  
+        </a>
+        <br>
+        <!-- button start game-->
+        <a href="start-game.html" >
+            <button type="button" id="btn-play" >Start Game</button>  
+        </a>
+        
+    </div>
+    
+    </div>
+
+  </div>
+</div>
 </body>
 </html>

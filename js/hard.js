@@ -201,8 +201,8 @@ const allAudio = [
             
             // give alert
             Swal.fire({
-                title: "Game Finished!",
-                text:"You will be directed to another page...",
+                title: "Finished!",
+                text:"Waiting...",
                 icon: "success",
                 confirmButtonText: "OK",
                 timer: 5000,
@@ -214,6 +214,19 @@ const allAudio = [
             window.location.href="result.html";
             }); 
         }
+        // result text
+        if(score >= 120){
+            sessionStorage.setItem("resultText","Outstanding!");
+        }else if(score >= 80){
+            sessionStorage.setItem("resultText","Well Done!");
+        }else if(score >= 40){
+            sessionStorage.setItem("resultText","Pretty Good!");
+        }else if(score >= 0){
+            sessionStorage.setItem("resultText","Keep Practicing!");
+        }else{
+            sessionStorage.setItem("resultText","Oops... Try Again!");
+        }
+
         // Save score in sessionStorage
         sessionStorage.setItem("gameScore", score);
 
@@ -266,6 +279,22 @@ function gameOver(){
         timerProgressBar: true,
         showConfirmButton: false
     }).then(() => {
+    
+        // result text
+        if(score >= 120){
+            sessionStorage.setItem("resultText","Outstanding!");
+        }else if(score >= 80){
+            sessionStorage.setItem("resultText","Well Done!");
+        }else if(score >= 40){
+            sessionStorage.setItem("resultText","Pretty Good!");
+        }else if(score >= 0){
+            sessionStorage.setItem("resultText","Keep Practicing!");
+        }else{
+            sessionStorage.setItem("resultText","Oops... Try Again!");
+        }
+    
+    // Save score in sessionStorage
+    sessionStorage.setItem("gameScore", score);
         
     // Save level in sessionStorage
     sessionStorage.setItem("currentLevel", "hard.html");
@@ -274,6 +303,7 @@ function gameOver(){
     window.location.href = "result.html";
 
     });
+
 }  
 
 // home button confirm alert

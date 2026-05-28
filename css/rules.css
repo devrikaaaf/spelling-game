@@ -1,7 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
 #container{
-    font-size: 30px;
-    font-weight:bold;
+    background-image: url("../img/bgHome.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    height: max-content;
+    align-content: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+   
 }
-#container p{
-    margin-top: 30px;
+.rules-container{
+    background-image: url("../img/bgResult.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left:16rem;
+    padding:1rem;
+    align-items: center;
+    width: 780px; 
+    height: max-content; 
+    display:flex;
+    flex-wrap: wrap;
+    flex-basis:100%;
+    border-radius:20px;
+    box-shadow: 0 3px 18px #595959;
+}
+
+#header{
+    height: max-content;
+    margin-bottom: 0.7rem;
+    display:flex;
+    flex-direction: column;
+    flex-basis:100%; 
+    background-color: #FEFFC4F2;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-style: normal;
+}
+.title{
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2rem;
+    color: black;
+}
+
+.rules-list{
+    background-color: #FEFFC4F2;
+    border-radius: 10px;
+    color: black; 
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis:100%;
+    height: max-content; 
+    font-family: "Inter", sans-serif;
+    padding:1rem;
+    align-content: center;
+    justify-content: center;
+    gap:10px;
+   
+}
+.rule-item{
+    background: #FFFFFFF2;
+    padding: 0.5rem 15px;
+    border-radius: 8px;
+    border-left: 5px solid #FFB201;
+    line-height: 1.8;
+    color: black; 
+    font-size: 1.1rem;
+}
+.score-box{
+    margin-top: 10px;
+    background: #fff3cd;
+    padding: 10px;
+    border-radius: 12px;
+}
+.score-box li{
+    margin-left: 20px;
+}
+
+
+
+
+/* game level */
+.btn-start{
+    display: flex;
+    flex-direction:row;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+
+/* button level */
+
+#btn-play, #btn-home{
+    background-color:black; 
+    color: #FEFDDF;
+    border: none;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: all 0.3s ease; 
+}
+
+
+/* button game:hover */
+#btn-play:hover, #btn-home:hover{
+    background-color: #FFB201; 
+    color:black; 
+    transform: scale(1.06);    
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
 }
