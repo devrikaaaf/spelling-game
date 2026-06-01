@@ -202,7 +202,7 @@ const allAudio = [
             // give alert
             Swal.fire({
                 title: "Finished!",
-                text:"Waiting...",
+                text:"Please waiting...",
                 icon: "success",
                 confirmButtonText: "OK",
                 timer: 5000,
@@ -218,7 +218,7 @@ const allAudio = [
             sessionStorage.setItem("resultText","Outstanding!");
         }else if(score >= 80){
             sessionStorage.setItem("resultText","Well Done!");
-        }else if(score >= 40){
+        }else if(score >= 50){
             sessionStorage.setItem("resultText","Pretty Good!");
         }else if(score >= 0){
             sessionStorage.setItem("resultText","Keep Practicing!");
@@ -283,7 +283,7 @@ function gameOver(){
         sessionStorage.setItem("resultText","Outstanding!");
     }else if(score >= 80){
         sessionStorage.setItem("resultText","Well Done!");
-    }else if(score >= 40){
+    }else if(score >= 50){
         sessionStorage.setItem("resultText","Pretty Good!");
     }else if(score >= 0){
         sessionStorage.setItem("resultText","Keep Practicing!");

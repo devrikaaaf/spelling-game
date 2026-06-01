@@ -75,10 +75,11 @@
 
 /* Game title */
 .header .title{
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    text-align: left;
     font-family: "Inter", sans-serif;
     font-style: italic;
     font-weight: 700;
@@ -153,4 +154,34 @@
     color:#FEFDDF;
     transform: scale(1.06);      
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);  
+}
+
+/* media query phone */
+@media (max-width: 768px){
+
+    .container-card{
+        width:100%;
+        padding:0.8rem;
+    }
+
+    .header .title{
+        font-size:2rem;
+    }
+
+    #quest{
+        font-size:1rem;
+        padding:0.5rem;
+    }
+    
+    .btn-game{
+        flex-direction:column;
+        gap:0rem;
+        padding: 1.2rem;
+    }
+
+    #btn-easy, #btn-medium, #btn-hard{
+        width:12rem;
+        max-width:none;
+        padding: 0.5rem;
+    }
 }

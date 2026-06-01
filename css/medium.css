@@ -1,24 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
-
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
 #container{
     background-image: url("../img/bgHome.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 5rem;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     font-family: "Inter", sans-serif;
     font-weight: 500;
     font-style: normal;
+    display:flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 .container-card{
-    padding:2vh;
+    padding:1rem;
     align-items: center;
-    width: 700px; 
+    width: 100%;
+    max-width: 700px; 
     height: max-content; 
     display:flex;
     flex-wrap: wrap;
@@ -37,7 +43,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 5rem;
+    height: 10vh;
+    margin-bottom: 1rem;
     display:flex;
     flex-direction: row;
     flex-basis:100%; 
@@ -54,9 +61,10 @@
 #btn-game{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     height: max-content;
-    margin-left: 1rem;
-    gap:2vw;
+    gap:2vh;
+    align-items: self-start;
 }
 #btn-home, #btn-rules{
     width:3rem;
@@ -76,7 +84,7 @@
     justify-content: center; 
 }
 #btn-home:hover, #btn-rules:hover{
-    background-color: #001C46;
+   background-color: #001C46;
     color: #FEFDDF;
     transform: scale(1.04);    
     box-shadow: 0 3px 10px #001C46;
@@ -88,15 +96,15 @@
     flex-direction: row;
     height: max-content;
     justify-content: center; 
-    margin-top: 1rem;
-    padding:8px; 
-    gap:2vw;
+    margin-top: 1rem;    
+    gap:2rem;
 }
 /* score */
 
 /* scorenum */
 #scoreNum{ 
-    width:120px;
+    min-width:120px;
+    width:auto;
     height: 3rem;
     border: none;
     border-radius: 10px;
@@ -111,7 +119,8 @@
 
 /* timer */
 #timer{ 
-    width:100px;
+    min-width:100px;
+    width:auto;
     height: 3rem;
     border: none;
     border-radius: 10px;
@@ -136,11 +145,14 @@
     color: #001C46;
     display:flex;
     flex-direction:column;
-    width:675px;
+    width:100%;
+    max-width:675px;
     height:max-content;
     font-family: "Inter", sans-serif;
     padding:2rem;
-    margin-top:1rem;
+    /* margin-top:1rem; */
+    margin:0 auto;
+    gap:3rem;
     align-content: center;
     justify-content: center;
     flex-basis:100%;
@@ -150,8 +162,8 @@
     flex-direction: row;
     font-weight: 700;
     font-size:2.2rem;
-    margin-left: 26rem; 
-    margin-bottom: 0.5rem;
+    margin-left: 15rem; 
+    justify-content: center;
 }
 
 /* img, question, and hint */
@@ -161,37 +173,42 @@
     flex-direction: row;
     flex-wrap: wrap;
     flex-basis:100%;
-    justify-content: space-between; 
+    justify-content: space-around; 
 }
 /* img */
 .figure{
     width: 13rem;
-    
 }
 
 /* group element for audio, hint button, and user input */
 .btnQuest{
     display:flex;
     flex-direction: column;
-    margin-top:1rem;
+    margin:0;
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    
+    width: 100%;
+    max-width: 400px;
+    gap:1.5rem;
 }
 
 /* audio and hint button */
 #audio-hint{
+    width: 100%;
+    max-width: 420px;
     height: max-content;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-between;  
-    margin-bottom:1.5rem;  
+    margin:0 auto; 
+    
 }
 
 /* button play audio */
 #btn-audio{
-    width: 10rem;
+    width:100%;
+    max-width: 10rem;
     height:max-content;
     display:flex;
     justify-content: center;
@@ -218,7 +235,8 @@
 
 /* button hint */
 #btn-hint{
-    width: 10rem;
+    width:100%;
+    max-width: 10rem;
     height:max-content;
     display:flex;
     justify-content: center;
@@ -236,7 +254,7 @@
     background-color: #001C46;
     color:#FBF5DD;
     transform: scale(1.04);    
-    box-shadow: 0 3px 12px #001C46;
+    box-shadow: 0 3px 12px #BCD9A2; 
 }
 
 #userInput{
@@ -244,7 +262,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
     padding: 0.3rem;
     text-align: center;
     border: 2px solid #001C46;
@@ -259,7 +278,9 @@
 }
 
 #btn-check{
-    margin-top: 1rem;
+    width: 100%;
+    max-width: 420rem;
+    margin:0 auto;
     background-color: #001C46;
     color:#FBF5DD;
     font-weight: 800;
@@ -274,7 +295,7 @@
     background-color: #FFB300;
     color:#001C46;
     transform: scale(1.04);    
-    box-shadow: 0 3px 12px #918F92;
+    box-shadow: 0 3px 12px #BCD9A2; 
 }
 /* when button check disabled */
 #btn-check:disabled{
@@ -294,8 +315,6 @@
     padding: 1rem;
     visibility: hidden;
 }
-
-
 
 
 
@@ -321,8 +340,9 @@
 
 .swal2-confirm:hover {
     transform: scale(1.06) !important;    
-    box-shadow: 0 2px 10px #001C46 !important; 
+    box-shadow: 0 2px 10px #001C46  !important; 
 }
+
 .swal2-cancel {
     background-color: #FFDE63 !important; 
     font-weight: 700;
@@ -334,6 +354,64 @@
 
 .swal2-cancel:hover {
     transform: scale(1.06) !important;    
-    box-shadow: 0 2px 10px #FFDE63 !important;  
+    box-shadow: 0 2px 10px #FFDE63 !important; 
 }
 
+/* phone media query  */
+@media (max-width: 768px){
+  
+    .container-card{
+        width:max-content;
+        padding:1rem;
+    }
+
+   
+    #score-timer{
+        display: flex;
+        flex-direction: row;
+        height: max-content;
+        justify-content: center; 
+        margin-top: 1rem;
+        padding:0.5rem; 
+        gap:2rem;
+        font-size:0.8rem;
+    }
+    #score-timer{
+        width:max-content;
+    }
+    #quest{
+        font-size:1rem;
+        padding:1.5rem;
+        gap:1rem;
+        justify-content: center;
+    }
+    #img-quest{
+        gap:3rem;
+    }
+    .guess{
+        margin-top: 1.5rem;
+        margin-left: 0; 
+    }
+    .figure{
+        width: 12rem;
+    }
+    #audio-hint{
+        justify-content: space-between;
+        top:2rem; 
+    }
+
+    #btn-game{
+        width:max-content;
+        padding: 0.2rem;
+    }
+    
+    #btn-check{
+        font-size: 1.2rem;
+    }
+    #btn-check:hover{
+        background-color: #FFB300;
+        color:#001C46;
+        transform: scale(1.02);    
+        box-shadow: 0 3px 15px #3e7dda;
+    }
+}
