@@ -19,8 +19,9 @@
 .container-card{
     padding:2vh;
     align-items: center;
-    width: 360px; 
-    height: 500px; 
+    width:100%;
+    max-width: 360px; 
+    height: max-content; 
     display:flex;
     flex-wrap: wrap;
     background-image: url("../img/bgResult.png");
@@ -40,8 +41,9 @@
     color: black; 
     display:flex;
     flex-direction:column;
-    width:475px;
-    height: 475px; 
+    width:100%;
+    max-width:475px;
+    height: max-content; 
     font-family: "Inter", sans-serif;
     padding:2rem;
     align-items: center;
@@ -67,6 +69,7 @@
     flex-basis:100%;
     justify-content: space-between; 
 }
+
 /* img */
 .figure{
     width: 15rem;
@@ -89,10 +92,13 @@
     display:flex;
     flex-direction: column;
     align-items: center;
+    width:100%;
+    max-width:20rem;
 }
 
 #btn-home, #btn-playAgain{
-    width:16rem;
+    width:100%;
+    max-width:20rem;
     margin-top: 1rem;
     background-color: #680000; 
     color:#FBF5DD;
@@ -112,3 +118,27 @@
 }
 
 
+/* phone media query  */
+@media (max-width: 768px){
+  
+    .container-card{
+        padding:1rem;
+    }
+    #quest{
+        padding:2rem;
+        gap:1.2rem;
+        justify-content: center;
+    }
+    #img-quest{
+        gap:3rem;
+    }
+    #congrats{
+        font-size: 2.2rem;
+        margin:0;
+        justify-content: center;
+    }
+    .figure{
+        width: 13rem;
+        margin-top: 2rem;
+    }
+}

@@ -166,8 +166,7 @@
     flex-direction: row;
     font-weight: 700;
     font-size:2.2rem;
-    margin-left: 15rem; 
-    justify-content: center;
+    margin-left: 26rem;  
 }
 
 /* img, question, and hint */
@@ -394,6 +393,7 @@
     .guess{
         margin-top: 1.5rem;
         margin-left: 0; 
+        justify-content: center;
     }
     .figure{
         width: 12rem;

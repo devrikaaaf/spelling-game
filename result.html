@@ -37,12 +37,10 @@
                 <div class="btnQuest">
                     <!-- button play again-->
                 
-                        <button id="btn-playAgain">Play again</button>
+                    <button id="btn-playAgain">Play again</button>
                    
                     <!-- button Home-->
-                     <a href="index.html">
-                        <button id="btn-home" >Home</button>
-                     </a>
+                    <button id="btn-home" >Home</button>
                 </div>
 
             </div>
@@ -84,6 +82,13 @@
 
         //start a new game in the same level
         window.location.href = currentLevel;
+    })
+
+    //get the element button play again 
+    const home = document.getElementById("btn-home");
+    home.addEventListener("click",()=>{
+        //back to home
+        window.location.href = "index.html";
     })
 
  </script>
