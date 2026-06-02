@@ -391,12 +391,8 @@
     }
     .guess{
         margin-top: 1.5rem;
-<<<<<<< HEAD
         margin:0;
         justify-content: center;
-=======
-        justify-content: center; 
->>>>>>> f60b4cee619dea5ab899e73912126dd31155c2a4
     }
     .figure{
         width: 12rem;
