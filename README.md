@@ -2,7 +2,7 @@
 ![Banner](img/banner.png)
 
 # 🧠 Spelling Game Project
-The Spelling Game is an interactive web application designed to help users improve their spelling skills in a fun and engaging way. The game offers three levels of difficulty - Easy, Medium, and Hard - each with its own set of words and challenges. The application is built using a combination of HTML, CSS, and JavaScript, with a focus on providing a user-friendly interface and a seamless gaming experience.
+This project was developed to make it easier for grade 3-9 students to learn English. I see many children struggling with monotonous learning methods, so I want to combine gamification elements so that the learning process is not boring. The game offers three levels of difficulty - Easy, Medium, and Hard - each with its own set of words and challenges. The application is built using a combination of HTML, CSS, and JavaScript, with a focus on providing a user-friendly interface and a seamless gaming experience.
 
 ## 🚀 Features
 - **Multiple Game Levels**: The game offers three levels of difficulty - Easy, Medium, and Hard - each with its own set of words and challenges.
@@ -16,6 +16,7 @@ The Spelling Game is an interactive web application designed to help users impro
 - **Frontend**: HTML, CSS, and JavaScript
 - **Libraries**: Bootstrap CSS and SweetAlert2
 - **Storage**: Session storage
+- **Deployment**: Vercel
 
 ## 📦 Installation
 To get started with the Spelling Game project, follow these steps:
@@ -28,6 +29,7 @@ To get started with the Spelling Game project, follow these steps:
 2. Click on the "Start Game" button to begin playing.
 3. Select your desired game level : Easy, Medium, or Hard.
 4. Follow the instructions to play the game.
+
 
 ## 📂 Project Structure
 ```markdown
@@ -65,5 +67,9 @@ Spelling-Game/
     |-- hard.png
     |-- medium.png
     |-- score.png
-    
+```
+
+## 🎮 Play the game!
+Try playing the game to test your English vocabulary skills!
+🔗https://spelling-game-cyan.vercel.app
 
